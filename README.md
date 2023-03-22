@@ -4,6 +4,10 @@ Welcome to the VS Code Java world. Here is a guideline to help you get started t
 - Operadores relacionais
 >São símbolos capazes de realizar comparações de similaridade e/ou tamanho. Em similaridade se compara igualdade e diferença. E o de tamanho maior/menor e maior/menor igual. Não é possível utilizar os símbolos para comparar tamanho de uma string, boleanos e comparações de tipos diferentes. `Exemplos: boolA <= intA`
 
+- Operadores Relacionais
+>Realizam comparações lógicoas dos tipos de conjunção, disjunção, disjunção exclusiva, Negação. São mais restritivos em relação ao uso.
+> - Conjunção
+
 ### Atribuições do profissional backend
 - Criar camada de persistência da aplicação
 - Implementar as regras de negócio
