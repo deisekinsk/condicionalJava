@@ -1,18 +1,17 @@
-## Getting Started
+## Lógica Condicional e Controle De Fluxos
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+- Operadores relacionais
+>São símbolos capazes de realizar comparações de similaridade e/ou tamanho. Em similaridade se compara igualdade e diferença. E o de tamanho maior/menor e maior/menor igual. Não é possível utilizar os símbolos para comparar tamanho de uma string, boleanos e comparações de tipos diferentes. `Exemplos: boolA <= intA`
 
-## Folder Structure
+### Atribuições do profissional backend
+- Criar camada de persistência da aplicação
+- Implementar as regras de negócio
+- Modelar objetos e banco de dados
+- Criar e disponibilizar API's
 
-The workspace contains two folders by default, where:
+## Formatação de arquivo .md
 
 - `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
+[here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
 > If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
