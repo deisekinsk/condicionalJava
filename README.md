@@ -1,12 +1,15 @@
 ## Lógica Condicional e Controle De Fluxos
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 - Operadores relacionais
 >São símbolos capazes de realizar comparações de similaridade e/ou tamanho. Em similaridade se compara igualdade e diferença. E o de tamanho maior/menor e maior/menor igual. Não é possível utilizar os símbolos para comparar tamanho de uma string, boleanos e comparações de tipos diferentes. `Exemplos: boolA <= intA`
 
 - Operadores Relacionais
->Realizam comparações lógicoas dos tipos de conjunção, disjunção, disjunção exclusiva, Negação. São mais restritivos em relação ao uso.
-> - Conjunção
+>Realizam comparações lógicoas de operandos ou expressões  dos tipos de conjunção, disjunção, disjunção exclusiva, Negação. São mais restritivos em relação ao uso.
+> - Conjunção só retorna verdadeiro quando ambos são verdade. Símbolo &&, termo `and`. - Disjunção só retorna falsa quan ambos são falsos. Símbolo ||, termo `or`. - Disjunção exclusiva só apresenta verdade quando ambos são opostos. E falso quando ambos são similares. Símbolo ^, termo `xor`. - Negaçao inverte o valor lógico. Símbolo !.
+> Operadores bitwise (& e |); e Operadores shift ( ^, >>, >>>, <<)
+
+- Boas práticas
+Crie variáveis auxiliarea para guardar resultados intermediários
 
 ### Atribuições do profissional backend
 - Criar camada de persistência da aplicação

@@ -26,11 +26,43 @@ public class App {
     }
 
     public static void operadoresLogicos() {
-        
+        boolean carteiraCNHA = false;
+        boolean carteiraCNHB = true;
+        boolean carteiraCNHC = true;
+        boolean carteiraCNHD = true;
         
         
         System.out.println("\n*** OPERADORES LÓGICOS\n");
 
+        if(carteiraCNHA){
+            System.out.println("Candidato eliminado. Risco alto.");
+        }else if(carteiraCNHB && !carteiraCNHC){
+            System.out.println("Selecionado");
+        }else if(!carteiraCNHD || carteiraCNHA){
+            System.out.println("Aprovado");
+        }else{
+            System.out.println("Candidato eliminado. Fora dos critérios.");
+        }
+        
+    }
+
+    public static void receberAuxilioBrasil(double rendaFamiliar, int quantidadePessoas ) {
+        boolean salarioBaixo = false;
+        //quando a renda familiar for < que 105 por pessoa, recebe auxilio
+
+        double calculoPorPessoa = rendaFamiliar/quantidadePessoas;
+
+        boolean rendaPorPessoa = calculoPorPessoa <= 105.00;
+      
+
+       if( salarioBaixo = rendaPorPessoa){
+        System.out.println(salarioBaixo + " | Recebe auxílio");
+
+       } else{
+        System.out.println(salarioBaixo + " | Não recebe auxílio com renda familiar de R$" + rendaFamiliar + ", pois esse valor dividido por " + quantidadePessoas + " é " + calculoPorPessoa + ", sendo acima de R$105,00 por pessoa." );
+       }
+        
+        
         
     }
 
@@ -40,5 +72,6 @@ public class App {
     public static void main(String[] args) throws Exception {
         operadoresRelacionais();
         operadoresLogicos();
+        receberAuxilioBrasil(500.00,5);
     }
 }
