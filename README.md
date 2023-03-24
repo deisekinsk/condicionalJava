@@ -1,3 +1,9 @@
+### Atribuições do profissional backend
+- Criar camada de persistência da aplicação
+- Implementar as regras de negócio
+- Modelar objetos e banco de dados
+- Criar e disponibilizar API's
+
 ## Lógica Condicional e Controle De Fluxos
 
 - Operadores relacionais
@@ -13,16 +19,29 @@ Realizam comparações lógicoas de operandos ou expressões  dos tipos de conju
 
 - Controle de Fluxo
 Estruturas que direcionam o fluxo de execução de um programa.
-Tipos: Decisão(if, else, else if, switch, operador ternário), repetição(for, while, do while) e interrupçã (break, continue e return).
+Tipos: Decisão(if, else, else if, switch, operador ternário), repetição(for, while, do while) e interrupçã (break, continue e return). if avalia expressões booleanas.
 
 - Boas práticas
 Crie variáveis auxiliarea para guardar resultados intermediários
 
-### Atribuições do profissional backend
-- Criar camada de persistência da aplicação
-- Implementar as regras de negócio
-- Modelar objetos e banco de dados
-- Criar e disponibilizar API's
+-Tipod de blocos de execução são locais (dentro de metodos), estático e de instancia(ambos dentro de classe).
+
+## Estrutura de Repetição
+Loop: Repetir uma operação ou uma sequeência de comandos várias vezes.
+- `while` teste no início (Entrada, Expressão, Sentença, Fim do Programa)
+- `do while` teste no final (Entrada, Sentença, Expressão, Fim do Programa)
+- `for` contada (Entrada, Inicialização, Expressão/Teste, Sentença, Atualização, Fim do Programa)
+- `break` e o `continue`
+
+### Incrementos pré-fixados e pós-fixados
+Pré-fixados: ++num ou --num, ele altera o valor da variável;
+Pós-fixados: num++ ou num--, ele altera o valor da variável, mas retorna o valor original
+
+### Arrays
+Objeto utilizado para armazenar dados sequenciais do mesmo tipo
+Existem o array unidimensional (lista), e o array multidimensional (tabela/matriz).
+
+Referência: [https://github.com/cami-la/loops-e-arrays](https://github.com/cami-la/loops-e-arrays)
 
 ## Formatação de arquivo .md
 

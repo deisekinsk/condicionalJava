@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
 
 
@@ -22,6 +24,7 @@ public class App {
        }else{
         System.out.println("Falso");
        }
+       System.out.println("Resultado:"+(i1 == i2) +","+ (c1 ==c2)+","+ (s1 ==s2));
 
     }
 
@@ -115,7 +118,18 @@ public class App {
         operadoresLogicos();
         receberAuxilioBrasil(500.00,5);
         controleFluxoBonus(600.00,4);
-        rodizioSaoPaulo(8);       
+        rodizioSaoPaulo(8);
+        
+        System.out.println("\n*** ESTRUTURA DE REPETIÇÃO\n");
+        //Usa Scanner para entrada de valor pelo usuário
+        Scanner recebeValor = new Scanner(System.in);
+        //Objetos que chamam as classes
+        EstruturasRepeticao estruturasRepeticao  = new EstruturasRepeticao();
+
+        //Chama os métodos das outras classes
+        estruturasRepeticao.repetiu();
+        System.out.print("Insira um valor inteiro: ");
+        estruturasRepeticao.incrementoDecremento(recebeValor.nextInt());
         
     }
 }
