@@ -94,5 +94,41 @@ public class EstruturasRepeticao {
         System.out.println("A quantidade de pares é " + contadorPares + " e ímpares " + contadorImpares);
 
     }
+
+    public void tabuada(int multiplicador){
+        System.out.println("Insira um número inteiro de 1 a 10: ");
+        multiplicador = recebeValor.nextInt();
+        
+       /*  do{
+        contador++;
+        int produto = multiplicador*contador;
+        System.out.println(multiplicador +" x "+contador+" = "+produto);
+        }while(contador < 10); */
+
+        for(int iteracao=1; iteracao<=10; ++iteracao){
+            int produto = multiplicador*iteracao;
+            System.out.println(multiplicador +" x "+iteracao+" = "+produto);
+        }
+
+        
+        
+    }
     
+    public void fatorial(int insereValor){
+        System.out.println("Insira um valor para calcular o fatorial");
+        insereValor = recebeValor.nextInt();
+        int armazenaValor = 1;
+        System.out.print(insereValor+"! = ");
+
+        for(int i = insereValor; i >= 1 ; i--){
+            armazenaValor = armazenaValor *i;
+            if(i >1){
+                System.out.print(i+" x ");
+            }else{
+                System.out.print(i);
+            }
+        }
+        System.out.println(" = "+armazenaValor);
+
+    }
 }

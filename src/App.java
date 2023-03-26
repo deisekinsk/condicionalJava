@@ -132,7 +132,9 @@ public class App {
         //estruturasRepeticao.nomeIdade(null, 0);
         //estruturasRepeticao.recebeNota(0);
         //estruturasRepeticao.notaMaiorEmedia(0);
-        estruturasRepeticao.verificaParImpar(0, 0);
+        //estruturasRepeticao.verificaParImpar(0, 0);
+        //estruturasRepeticao.tabuada(0);
+        estruturasRepeticao.fatorial(0);
         
     }
 }
