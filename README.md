@@ -43,6 +43,9 @@ Existem o array unidimensional (lista), e o array multidimensional (tabela/matri
 
 Referência: [https://github.com/cami-la/loops-e-arrays](https://github.com/cami-la/loops-e-arrays)
 
+#### Atalhos
+Ctrl + Shift + ArrowUp
+
 ## Formatação de arquivo .md
 
 - `src`: the folder to maintain sources

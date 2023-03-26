@@ -127,9 +127,11 @@ public class App {
         EstruturasRepeticao estruturasRepeticao  = new EstruturasRepeticao();
 
         //Chama os métodos das outras classes
-        estruturasRepeticao.repetiu();
-        System.out.print("Insira um valor inteiro: ");
-        estruturasRepeticao.incrementoDecremento(recebeValor.nextInt());
+        System.out.println("Insira um valor inteiro: ");
+        //estruturasRepeticao.incrementoDecremento(recebeValor.nextInt());
+        //estruturasRepeticao.nomeIdade(null, 0);
+        //estruturasRepeticao.recebeNota(0);
+        estruturasRepeticao.notaMaiorEmedia(0);
         
     }
 }
