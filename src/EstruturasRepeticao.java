@@ -5,6 +5,8 @@ public class EstruturasRepeticao {
     boolean verificaRepeticao = true;
     Scanner recebeValor = new Scanner(System.in);
     int ANO_2023 = 2023;
+    int enumeraEntrada = 0;
+    int contador = 0;
 
 
     public void incrementoDecremento(int num){
@@ -43,14 +45,13 @@ public class EstruturasRepeticao {
     }
     
     public void notaMaiorEmedia(int insereNota){
-        int contador = 0;
         int armazenaMaior = 0;
         int soma = 0;
-        int enumeraEntrada = 0;
+        
         
         do{
-            System.out.println("Insira suas notas (5 valores): ");
-            System.out.print(++enumeraEntrada +". ");   
+            System.out.print("Insira suas notas (5 valores): \n"+ ++enumeraEntrada +". ");  
+
             insereNota = recebeValor.nextInt();
             contador++;
             
@@ -66,6 +67,31 @@ public class EstruturasRepeticao {
 
         System.out.println("O maior número é " +armazenaMaior+ ", e a média é " + media);
         
+
+    }
+
+    public void verificaParImpar(int quantidadeValores, int insereValor){
+        
+        int contadorPares = 0;
+        int contadorImpares = 0;
+        
+        System.out.println("Quantos valores serão inseridos?");
+        quantidadeValores = recebeValor.nextInt();        
+
+        do{
+            System.out.print("Insira valor:\n"+ ++enumeraEntrada +". ");
+            insereValor = recebeValor.nextInt();            
+            contador++;
+            // % mod verifica o resto, / divisão
+            if (insereValor % 2 == 0){
+                contadorPares++;
+            }else{
+                contadorImpares++;
+            }
+
+        }while(contador < quantidadeValores);
+
+        System.out.println("A quantidade de pares é " + contadorPares + " e ímpares " + contadorImpares);
 
     }
     
