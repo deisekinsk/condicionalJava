@@ -129,14 +129,15 @@ public class App {
         
         //Chama os métodos das outras classes
         System.out.println("Insira um valores inteiros");
-        //estruturasRepeticao.incrementoDecremento(recebeValor.nextInt());
+        estruturasRepeticao.incrementoDecremento(recebeValor.nextInt());
         //estruturasRepeticao.nomeIdade(null, 0);
         //estruturasRepeticao.recebeNota(0);
         //estruturasRepeticao.notaMaiorEmedia(0);
         //estruturasRepeticao.verificaParImpar(0, 0);
         //estruturasRepeticao.tabuada(0);
-        //estruturasRepeticao.fatorial(0);
+        estruturasRepeticao.fatorial(0);
         repeticaoArrays.ordemInversa();
+        repeticaoArrays.consoantes();
 
 
 
