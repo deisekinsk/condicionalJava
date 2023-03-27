@@ -125,7 +125,8 @@ public class App {
         Scanner recebeValor = new Scanner(System.in);
         //Objetos que chamam as classes
         EstruturasRepeticao estruturasRepeticao  = new EstruturasRepeticao();
-
+        RepeticaoArrays repeticaoArrays = new RepeticaoArrays();
+        
         //Chama os métodos das outras classes
         System.out.println("Insira um valores inteiros");
         //estruturasRepeticao.incrementoDecremento(recebeValor.nextInt());
@@ -134,7 +135,11 @@ public class App {
         //estruturasRepeticao.notaMaiorEmedia(0);
         //estruturasRepeticao.verificaParImpar(0, 0);
         //estruturasRepeticao.tabuada(0);
-        estruturasRepeticao.fatorial(0);
+        //estruturasRepeticao.fatorial(0);
+        repeticaoArrays.ordemInversa();
+
+
+
         
     }
 }
