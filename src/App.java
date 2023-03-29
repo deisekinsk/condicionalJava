@@ -121,23 +121,27 @@ public class App {
         rodizioSaoPaulo(8);
         
         System.out.println("\n*** ESTRUTURA DE REPETIÇÃO\n");
-        //Usa Scanner para entrada de valor pelo usuário
-        Scanner recebeValor = new Scanner(System.in);
-        //Objetos que chamam as classes
-        EstruturasRepeticao estruturasRepeticao  = new EstruturasRepeticao();
-        RepeticaoArrays repeticaoArrays = new RepeticaoArrays();
-        
-        //Chama os métodos das outras classes
-        System.out.println("Insira um valores inteiros");
-        estruturasRepeticao.incrementoDecremento(recebeValor.nextInt());
-        //estruturasRepeticao.nomeIdade(null, 0);
-        //estruturasRepeticao.recebeNota(0);
-        //estruturasRepeticao.notaMaiorEmedia(0);
-        //estruturasRepeticao.verificaParImpar(0, 0);
-        //estruturasRepeticao.tabuada(0);
-        estruturasRepeticao.fatorial(0);
-        repeticaoArrays.ordemInversa();
-        repeticaoArrays.consoantes();
+        try (//Usa Scanner para entrada de valor pelo usuário
+        Scanner recebeValor = new Scanner(System.in)) {
+            //Objetos que chamam as classes
+            EstruturasRepeticao estruturasRepeticao  = new EstruturasRepeticao();
+            RepeticaoArrays repeticaoArrays = new RepeticaoArrays();
+            
+            //Chama os métodos das outras classes
+            System.out.println("Insira um valores inteiros");
+            estruturasRepeticao.incrementoDecremento(recebeValor.nextInt());
+            //estruturasRepeticao.nomeIdade(null, 0);
+            //estruturasRepeticao.recebeNota(0);
+            //estruturasRepeticao.notaMaiorEmedia(0);
+            //estruturasRepeticao.verificaParImpar(0, 0);
+            //estruturasRepeticao.tabuada(0);
+            //estruturasRepeticao.fatorial(0);
+            //repeticaoArrays.ordemInversa();
+            //repeticaoArrays.consoantes();
+            repeticaoArrays.numerosAleatorios();
+            System.out.println("");
+            repeticaoArrays.arrayMultidimensional();
+        }
 
 
 

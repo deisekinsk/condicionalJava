@@ -1,9 +1,12 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class RepeticaoArrays {
 
     int count = 0;
     Scanner recebeValor = new Scanner(System.in);
+    Random geraRandom = new Random();
+
 
     public void ordemInversa() {
         System.out.print("\nImprime ordem inversa\n Valores: {");
@@ -63,4 +66,58 @@ public class RepeticaoArrays {
 
         System.out.println("\nNº consotantes:"+quantidadeConsoantes);
     }
+
+    public void numerosAleatorios(){
+
+        int [] arrayNumeros = new int[20];
+
+        int comprimento = arrayNumeros.length;
+
+        for (count = 0; count < comprimento; count++){
+            int armazenaNumeros = geraRandom.nextInt(100);
+            arrayNumeros[count] = armazenaNumeros;            
+        }
+
+        System.out.println("20 números aleatórios:");
+        for (int armazenaNumeros : arrayNumeros) {
+            System.out.print(armazenaNumeros+ " ");
+        }
+
+        System.out.println("\nNúmeros Sucessores:");
+        for (int armazenaNumeros : arrayNumeros) {
+            System.out.print(++armazenaNumeros + " ");
+        }
+    }
+
+    public void arrayMultidimensional(){
+        //cria array multidimensional
+        int [][] arrayMultidimensional = new int [4][4];
+
+        int comprimento = arrayMultidimensional.length;
+        
+
+        //acessar a linha
+        for (int linhas=0; linhas < comprimento; linhas++) {
+            //percorrer colunas das linhas
+            int comprimentoDaLinha = arrayMultidimensional[linhas].length;
+            
+            for (int colunas = 0; colunas < comprimentoDaLinha; colunas++ ){
+                arrayMultidimensional[linhas][colunas] = geraRandom.nextInt(9);
+                //System.out.print("\n"+arrayMultidimensional);
+            }
+        System.out.println("Array multidimensional");
+        //acessando cada elemento da linha !!!
+            for (int[] elementoLinha : arrayMultidimensional) {
+                for (int elementoColuna : elementoLinha) {
+                    System.out.print(elementoColuna + " ");
+                }
+            }
+
+            
+        }
+
+        
+
+    }
+
 }
