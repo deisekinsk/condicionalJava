@@ -128,18 +128,17 @@ public class App {
             RepeticaoArrays repeticaoArrays = new RepeticaoArrays();
             
             //Chama os métodos das outras classes
-            System.out.println("Insira um valores inteiros");
+            System.out.println("Insira um número inteiro");
             estruturasRepeticao.incrementoDecremento(recebeValor.nextInt());
             //estruturasRepeticao.nomeIdade(null, 0);
             //estruturasRepeticao.recebeNota(0);
             //estruturasRepeticao.notaMaiorEmedia(0);
             //estruturasRepeticao.verificaParImpar(0, 0);
             //estruturasRepeticao.tabuada(0);
-            //estruturasRepeticao.fatorial(0);
-            //repeticaoArrays.ordemInversa();
-            //repeticaoArrays.consoantes();
+            estruturasRepeticao.fatorial(0);
+            repeticaoArrays.ordemInversa();
+            repeticaoArrays.consoantes();
             repeticaoArrays.numerosAleatorios();
-            System.out.println("");
             repeticaoArrays.arrayMultidimensional();
         }
 

@@ -105,18 +105,22 @@ public class RepeticaoArrays {
                 arrayMultidimensional[linhas][colunas] = geraRandom.nextInt(9);
                 //System.out.print("\n"+arrayMultidimensional);
             }
-        System.out.println("Array multidimensional");
-        //acessando cada elemento da linha !!!
-            for (int[] elementoLinha : arrayMultidimensional) {
-                for (int elementoColuna : elementoLinha) {
-                    System.out.print(elementoColuna + " ");
-                }
-            }
-
             
         }
 
-        
+        System.out.println("\nArray multidimensional");
+        //acessando cada elemento da linha !!!
+            for (int[] elementoLinha : arrayMultidimensional) {
+                for (int elementoColuna : elementoLinha) {
+                    if(elementoColuna % 2 == 0){
+                        System.out.print("K ");
+                        }else{
+                        System.out.print(elementoColuna + " ");
+                    }
+                }
+                //Quebra de coluna dentro do for
+                System.out.println();
+            }      
 
     }
 
